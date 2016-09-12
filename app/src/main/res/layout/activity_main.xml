@@ -13,27 +13,27 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
         <Button
-            android:id="@+id/btnSerch"
+            android:id="@+id/search"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
-            android:text="serch"
+            android:text="Search"
+            android:onClick="addItem"
             />
-
         <EditText
+            android:id="@+id/inputTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_toLeftOf="@id/btnSerch"
-            android:layout_alignTop="@id/btnSerch"
-            android:layout_alignBottom="@id/btnSerch"/>
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/search"
+            android:layout_alignTop="@id/search"
+            android:layout_alignBottom="@id/search"
+            />
     </RelativeLayout>
-
     <ListView
         android:id="@+id/list"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-    </ListView>
+        android:layout_height="match_parent"
+        />
 </LinearLayout>
